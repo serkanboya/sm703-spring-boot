@@ -19,8 +19,7 @@ pipeline {
 		}
 		stage("deploy"){
 			steps{
-				sh 'cd complete'
-				sh './mvnw spring-boot:run'
+				sh 'complete/deploy.sh'
 			}
 		}
 
