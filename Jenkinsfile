@@ -17,6 +17,10 @@ pipeline {
 				sh 'test/run.sh'
 			}
 		}
+		stage("deploy"){
+			ateps{
+				sh '.complete//mvnw spring-boot:run'
+		}
 
 	}
 
