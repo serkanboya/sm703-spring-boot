@@ -12,7 +12,9 @@ import org.springframework.context.annotation.Bean;
 public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
+		SpringApplication app = SpringApplication.run(Application.class);
+		app.setDefaultProperties(Collections.singletonMap("server.port", "8088"));
+		app.run(args);
 	}
 
 	@Bean
