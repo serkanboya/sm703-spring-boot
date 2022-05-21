@@ -3,4 +3,6 @@ cd $(dirname $0)
 
 cd ../complete
 
-nohup ./mvnw spring-boot:run >> server.log 2>&1&
+./mvnw install
+docker build -t helloworld .
+docker run -p 8088:8088 helloworld
