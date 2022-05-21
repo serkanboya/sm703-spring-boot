@@ -18,9 +18,11 @@ pipeline {
 			}
 		}
 		stage("deploy"){
+			agent {
+        docker {
 			steps{
 				sh 'complete/deploy.sh'
-			}
+			}}
 		}
 
 	}
