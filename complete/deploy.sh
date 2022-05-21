@@ -3,4 +3,4 @@ cd $(dirname $0)
 
 cd ../complete
 
-./mvnw spring-boot:run
+./mvnw spring-boot:run&
