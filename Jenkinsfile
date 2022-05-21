@@ -1,7 +1,9 @@
 pipeline {
 	agent none
 
-
+triggers {
+        pollSCM '* * * * *'
+    }
 
 	options {
 		disableConcurrentBuilds()
