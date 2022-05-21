@@ -13,7 +13,7 @@ import java.util.Collections;
 public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication app = SpringApplication.run(Application.class);
+		SpringApplication app = new SpringApplication(Application.class);
 		app.setDefaultProperties(Collections.singletonMap("server.port", "8088"));
 		app.run(args);
 	}
