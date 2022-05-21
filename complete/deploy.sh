@@ -3,4 +3,4 @@ cd $(dirname $0)
 
 cd ../complete
 
-./mvnw spring-boot:run&
+nohup ./mvnw spring-boot:run >> server.log 2>&1&
