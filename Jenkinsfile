@@ -11,18 +11,18 @@ pipeline {
 		stage("test") {
 			options { timeout(time: 30, unit: 'MINUTES') }
 			steps {
-				sh 'mvn test'
+				sh 'scripts/test.sh'
 			}
 		}
 		stage("package"){
 			steps{
-			    sh 'mvn clean install'
+			    sh 'scripts/build.sh'
 			}
 			 
 		}
 		stage("deploy"){
 		     steps{  
-                            sh 'deploy.sh'
+                            sh 'scripts/deploy.sh'
                         }   
 		}
 
