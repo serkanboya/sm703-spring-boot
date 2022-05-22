@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Bean;
 import java.util.Collections;
 
 @SpringBootApplication
-public class Application {
+public class Application extends SpringBootServletInitializer{
 
 	public static void main(String[] args) {
 		SpringApplication app = new SpringApplication(Application.class);
