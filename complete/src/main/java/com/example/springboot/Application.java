@@ -8,13 +8,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import java.util.Collections;
+org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
 public class Application extends SpringBootServletInitializer{
 
 	public static void main(String[] args) {
 		SpringApplication app = new SpringApplication(Application.class);
-		app.setDefaultProperties(Collections.singletonMap("server.port", "8099"));
 		app.run(args);
 	}
 
