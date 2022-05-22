@@ -11,7 +11,9 @@
 	<groupId>com.example</groupId>
 	<artifactId>spring-boot-complete</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-boot-complete</name>
+<packaging>war</packaging>
+	
+<name>spring-boot-complete</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
